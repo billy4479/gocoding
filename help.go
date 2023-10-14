@@ -12,10 +12,10 @@ Project types:
 	* svelte
 	* sveltekit
 	* ts
+	* rust-qt
 
 Options:
-	See 'gocoding -help' to have a complete list of flags
-`
+	See 'gocoding -help' to have a complete list of flags`
 
 func help() {
 	fmt.Println(helpMSG)

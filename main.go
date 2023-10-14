@@ -24,6 +24,8 @@ func main() {
 		err = CreateSvelteKit(&c)
 	case MODE_TYPESCRIPT:
 		err = CreateTS(&c)
+	case MODE_RUST_QT:
+		err = CreateRustQt(&c)
 	}
 
 	if err != nil {

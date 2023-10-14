@@ -13,6 +13,7 @@ const (
 	MODE_SVELTEKIT
 	MODE_GO
 	MODE_CPP
+	MODE_RUST_QT
 )
 
 type Config struct {
@@ -59,6 +60,8 @@ func ParseFlags() Config {
 		c.mode = MODE_GO
 	case "cpp":
 		c.mode = MODE_CPP
+	case "rust-qt":
+		c.mode = MODE_RUST_QT
 	default:
 		fmt.Fprintf(os.Stderr, "Invalid mode: %s.\n", args[1])
 		help()
